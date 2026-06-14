@@ -11,6 +11,8 @@ PetHAF Studio is a colorful terminal-based game where you adopt and care for one
 
 Each animal has its own stat profile, unique inventory items, and a signature special ability. One wrong move and your pet could starve, get attacked by a predator, or simply grow old. Save your progress and pick up right where you left off.
 
+The Name PetHAF is made by combining the initials of the members that created it as "Huzaifa", "Ayesha","Farah".
+
 ---
 
 ## Pets
