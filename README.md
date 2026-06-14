@@ -1,17 +1,31 @@
 <div align="center">
 
-A console-based virtual pet simulator built in C++
+```
+░█████████  ░██████████ ░██████████░██     ░██    ░███    ░██████████
+░██     ░██ ░██             ░██    ░██     ░██   ░██░██   ░██
+░██     ░██ ░██             ░██    ░██     ░██  ░██  ░██  ░██
+░█████████  ░█████████      ░██    ░██████████ ░█████████ ░█████████
+░██         ░██             ░██    ░██     ░██ ░██    ░██ ░██
+░██         ░██             ░██    ░██     ░██ ░██    ░██ ░██
+░██         ░██████████     ░██    ░██     ░██ ░██    ░██ ░██
+```
 
+**A console-based virtual pet simulator built in C++**
+
+![C++](https://img.shields.io/badge/C++-17-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white)
+![License](https://img.shields.io/badge/License-Open%20Source-brightgreen?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Active-success?style=flat-square)
 
 </div>
+
+---
 
 ## Overview
 
 PetHAF Studio is a colorful terminal-based game where you adopt and care for one of seven unique animals. Feed them, play with them, keep them healthy, earn Pet Points (PP), and watch them age — all rendered in vivid ANSI color directly in your console.
 
 Each animal has its own stat profile, unique inventory items, and a signature special ability. One wrong move and your pet could starve, get attacked by a predator, or simply grow old. Save your progress and pick up right where you left off.
-
-The Name PetHAF is made by combining the initials of the members that created it as "Huzaifa", "Ayesha","Farah".
 
 ---
 
@@ -36,15 +50,15 @@ The Name PetHAF is made by combining the initials of the members that created it
 On each turn you choose one action from the main menu. Every action advances time, which depletes your pet's stats passively.
 
 ```
-1  Feed             Use food from your inventory
-2  Play             Use a toy; costs energy, boosts mood
-3  Show Affection   Cuddle if mood ≥ 50; backfires when grumpy
-4  Groom            Earns 15 PP and keeps your pet clean
-5  Sleep            Restores full energy; earns 10 PP
-6  Pet Special Ability  Trigger your animal's unique move
-7  View Pet Health  Display live stat bars
-8  Store            Buy items with PP
-0  Quit             Save game and exit
+1  Feed                Use food from your inventory
+2  Play                Use a toy; costs energy, boosts mood
+3  Show Affection      Cuddle if mood >= 50; backfires when grumpy
+4  Groom               Earns 15 PP and keeps your pet clean
+5  Sleep               Restores full energy; earns 10 PP
+6  Pet Special Ability Trigger your animal's unique move
+7  View Pet Health     Display live stat bars
+8  Store               Buy items with PP
+0  Quit                Save game and exit
 ```
 
 ### Stats
@@ -53,14 +67,14 @@ Each stat runs from 0 to 100. Every turn that passes depletes them automatically
 
 | Stat | Passive Drain per Turn | Consequence at 0 |
 |------|------------------------|------------------|
-| Hunger | −5 | Health begins dropping; pet dies |
-| Mood | −2 | Pet becomes grumpy; affection backfires |
-| Energy | −3 | Pet refuses to play |
-| Health | — (no drain, but affected by hunger) | Pet dies |
+| Hunger | -5 | Health begins dropping; pet dies |
+| Mood | -2 | Pet becomes grumpy; affection backfires |
+| Energy | -3 | Pet refuses to play |
+| Health | — (affected by hunger) | Pet dies |
 
 ### Predator Events
 
-Every 4 age increments a predator attacks. You can pay **20 PP** to defend your pet — if you succeed, you're rewarded with **50 PP** and a mood boost. Declining (or having insufficient PP) costs −20 Health and −15 Mood.
+Every 4 age increments a predator attacks. You can pay **20 PP** to defend your pet — if you succeed, you are rewarded with **50 PP** and a mood boost. Declining (or having insufficient PP) costs -20 Health and -15 Mood.
 
 ---
 
@@ -211,7 +225,6 @@ Contributions are welcome. To get started:
 5. Open a pull request
 
 Please keep new code consistent with the existing style — ANSI output through `Colours.h`, input validation with `cin.fail()` guards, and virtual method overrides for any new pet types.
-Make sure all the given files are present in one path or folder so that the main file could compile.
 
 ---
 
