@@ -9,10 +9,11 @@
 
 A console-based virtual pet simulator built in C++
 
-Show Image
-Show Image
-Show Image
-Show Image
+https://img.shields.io/badge/C++-17-00599C?style=flat-square&logo=c%2B%2B&logoColor=white
+https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white
+https://img.shields.io/badge/License-Open%20Source-brightgreen?style=flat-square
+https://img.shields.io/badge/Status-Active-success?style=flat-square
+
 
 </div>
 
